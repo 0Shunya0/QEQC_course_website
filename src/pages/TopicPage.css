@@ -1,0 +1,43 @@
+.topic-page {
+  width: 100%;
+}
+
+.topic-page__header {
+  margin-bottom: 3rem;
+}
+
+.topic-page__meta {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.8rem;
+}
+
+.topic-page__title {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 500;
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+  max-width: 620px;
+}
+
+.topic-page__resources-label {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.9rem;
+}
+
+.topic-page__divider {
+  margin: 0.75rem 0 1.75rem;
+  border-top: 1px solid var(--color-border-strong);
+}
+
+.topic-page__missing {
+  padding: 3rem 0;
+  color: var(--color-text-soft);
+}

@@ -1,0 +1,121 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: rgba(247, 245, 241, 0.96);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  overflow-y: auto;
+  backdrop-filter: blur(2px);
+}
+
+.sidebar__header {
+  padding: 3rem 1.5rem 1.25rem;
+}
+
+.sidebar__eyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.8rem;
+}
+
+.sidebar__title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar__code {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.sidebar__search-container {
+  padding: 0 1.5rem 1.25rem;
+}
+
+.sidebar__nav {
+  flex: 1;
+  padding: 0 0 2rem;
+}
+
+.sidebar__nav-section {
+  padding: 0 1.5rem;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 1.25rem 0 0.65rem;
+}
+
+.sidebar__nav-item {
+  display: block;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+}
+
+.sidebar__nav-item:hover {
+  color: var(--color-text);
+}
+
+.sidebar__nav-item.active {
+  color: var(--color-text);
+  background: var(--color-accent-soft);
+}
+
+.sidebar__nav-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.sidebar__unit-number {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.sidebar__unit-title {
+  font-size: 0.92rem;
+}
+
+.sidebar__close {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform var(--transition-normal);
+    width: min(76vw, 320px);
+  }
+
+  .sidebar--open {
+    transform: translateX(0);
+  }
+
+  .sidebar__close {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+}
