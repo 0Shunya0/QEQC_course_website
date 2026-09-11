@@ -8,7 +8,31 @@
 }
 
 .unit-card:hover {
-  opacity: 0.7;
+  opacity: 0.85;
+}
+
+.unit-card:hover .unit-card__open {
+  color: var(--color-accent);
+  opacity: 1;
+}
+
+.unit-card__content {
+  flex: 1;
+}
+
+.unit-card__open {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+@media (max-width: 600px) {
+  .unit-card__open {
+    display: none;
+  }
 }
 
 .unit-card:last-child {

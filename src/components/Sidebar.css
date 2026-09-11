@@ -4,13 +4,13 @@
   left: 0;
   bottom: 0;
   width: var(--sidebar-width);
-  background: rgba(247, 245, 241, 0.96);
+  background: rgba(16, 22, 18, 0.96); /* Based on --color-surface */
   border-right: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   z-index: 999;
   overflow-y: auto;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(8px);
 }
 
 .sidebar__header {
@@ -69,8 +69,8 @@
 }
 
 .sidebar__nav-item.active {
-  color: var(--color-text);
-  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  background: var(--color-panel);
 }
 
 .sidebar__nav-unit {

@@ -1,34 +1,105 @@
-.home__header {
-  margin-bottom: 2.75rem;
+.home {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+  position: relative;
 }
 
-.home__eyebrow {
-  margin-bottom: 0.8rem;
+.course-hero {
+  margin-bottom: 4rem;
+}
+
+.course-hero__eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1.25rem;
+}
+
+.course-hero__title {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+  max-width: 16ch;
+}
+
+.course-hero__code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   color: var(--color-text-muted);
+  margin-bottom: 1.75rem;
+}
+
+.course-hero__desc {
+  font-size: 1.1rem;
+  color: var(--color-text-soft);
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+.home__divider {
+  margin: 3.5rem 0;
+}
+
+.course-section {
+  position: relative;
+  z-index: 1;
+}
+
+.course-section__header {
+  margin-bottom: 2rem;
+}
+
+.course-section__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-}
-
-.home__title {
-  font-size: clamp(2.5rem, 5vw, 3.6rem);
-  font-weight: 500;
-  margin-bottom: 0.75rem;
-  line-height: 0.95;
-  letter-spacing: -0.06em;
-}
-
-.home__meta {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: var(--color-text-muted);
+}
+
+.course-section__note {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  max-width: 46ch;
 }
 
 .home__units {
+  display: grid;
+}
+
+.home__secondary-nav {
   display: flex;
-  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
   border-top: 1px solid var(--color-border);
+}
+
+.home__secondary-link {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.home__secondary-link:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 3rem 1.5rem 4rem;
+  }
+
+  .home__secondary-nav {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
 }

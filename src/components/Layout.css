@@ -15,6 +15,21 @@
   margin: 0 auto;
 }
 
+.layout__home-link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+  transition: color var(--transition-fast);
+}
+
+.layout__home-link:hover {
+  color: var(--color-accent);
+}
+
 .layout__menu-btn {
   display: none;
 }

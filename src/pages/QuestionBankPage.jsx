@@ -26,8 +26,8 @@ export default function QuestionBankPage() {
             <div className="archive-page__actions">
               {document.url ? (
                 <>
-                  <a href={document.url} target="_blank" rel="noopener noreferrer">Open ↗</a>
-                  <a href={document.url} download target="_blank" rel="noopener noreferrer">Download ↓</a>
+                  <a href={document.url} className="archive-page__action archive-page__action--open" target="_blank" rel="noopener noreferrer">OPEN ↗</a>
+                  <a href={document.url} className="archive-page__action archive-page__action--download" download target="_blank" rel="noopener noreferrer">DOWNLOAD ↓</a>
                 </>
               ) : (
                 <span className="archive-page__empty">Not uploaded yet</span>

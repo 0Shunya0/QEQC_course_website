@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  --color-bg: #f7f5f1;
-  --color-surface: #fffdf9;
-  --color-panel: #f2efe9;
-  --color-text: #171614;
-  --color-text-soft: #4d4a45;
-  --color-text-muted: #7d786f;
-  --color-border: #ddd5ca;
-  --color-border-strong: #bfb6a8;
-  --color-accent: #1f1d1a;
-  --color-accent-soft: #efeae2;
+  --color-bg: #0B0F0D;
+  --color-surface: #101612;
+  --color-panel: #141A16;
+  --color-text: #E8ECE3;
+  --color-text-soft: #87938A;
+  --color-text-muted: #627368;
+  --color-border: #1D2721;
+  --color-border-strong: #2A362D;
+  --color-accent: #4A9EFF;
+  --color-accent-soft: #1E3A5F;
+  --color-accent-hover: #65AEFF;
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Inter', 'Segoe UI', sans-serif;
@@ -75,7 +76,7 @@ code {
 }
 
 ::selection {
-  background: #e4dccb;
+  background: var(--color-accent-soft);
   color: var(--color-text);
 }
 
@@ -91,7 +92,7 @@ hr {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d0c7b9;
+  background: var(--color-border-strong);
   border-radius: 999px;
 }
 

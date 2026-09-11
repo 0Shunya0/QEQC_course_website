@@ -22,7 +22,7 @@
   align-items: baseline;
   gap: 0.5rem;
   font-size: 0.85rem;
-  color: var(--color-text-secondary);
+  color: var(--color-text-soft);
   transition: color var(--transition-fast);
 }
 

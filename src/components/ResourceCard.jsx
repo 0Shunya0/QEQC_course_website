@@ -10,14 +10,16 @@ export default function ResourceCard({ resources }) {
         <div className="resource-item__label">{label}</div>
         <div className="resource-item__content">
           {item.url ? (
-            <div className="resource-item__actions">
-              <a href={item.url} className="resource-item__link" target="_blank" rel="noopener noreferrer">
-                <span className="resource-item__name">{item.name || `${label}.pdf`}</span>
-                <span className="resource-item__action">Open ↗</span>
-              </a>
-              <a href={item.url} className="resource-item__download" download target="_blank" rel="noopener noreferrer">
-                Download ↓
-              </a>
+            <div className="resource-item__details">
+              <span className="resource-item__name">{item.name || `${label}.pdf`}</span>
+              <div className="resource-item__actions">
+                <a href={item.url} className="resource-item__action resource-item__action--open" target="_blank" rel="noopener noreferrer">
+                  OPEN ↗
+                </a>
+                <a href={item.url} className="resource-item__action resource-item__action--download" download target="_blank" rel="noopener noreferrer">
+                  DOWNLOAD ↓
+                </a>
+              </div>
             </div>
           ) : (
             <div className="resource-item__empty">Not uploaded yet</div>

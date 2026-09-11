@@ -11,6 +11,7 @@ export default function UnitCard({ unit }) {
         <h3 className="unit-card__title">{unit.title}</h3>
         <div className="unit-card__hours">{unit.hours} Hours</div>
       </div>
+      <div className="unit-card__open" aria-hidden="true">Open &rarr;</div>
     </Link>
   );
 }

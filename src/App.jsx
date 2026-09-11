@@ -6,6 +6,8 @@ import TopicPage from './pages/TopicPage';
 import QuestionBankPage from './pages/QuestionBankPage';
 import TaNotesPage from './pages/TaNotesPage';
 
+import GuidePage from './pages/GuidePage';
+
 export default function App() {
   return (
     <Layout>
@@ -15,6 +17,7 @@ export default function App() {
         <Route path="/unit/:unitId/topic/:topicId" element={<TopicPage />} />
         <Route path="/question-bank" element={<QuestionBankPage />} />
         <Route path="/ta-notes" element={<TaNotesPage />} />
+        <Route path="/guide" element={<GuidePage />} />
       </Routes>
     </Layout>
   );

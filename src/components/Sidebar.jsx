@@ -45,6 +45,11 @@ export default function Sidebar({ isOpen, onClose }) {
         <NavLink to="/ta-notes" className={({ isActive }) => `sidebar__nav-item ${isActive ? 'active' : ''}`} onClick={onClose}>
           TA Notes
         </NavLink>
+
+        <div className="sidebar__nav-section sidebar__nav-section--standalone">Guide</div>
+        <NavLink to="/guide" className={({ isActive }) => `sidebar__nav-item ${isActive ? 'active' : ''}`} onClick={onClose}>
+          Guide
+        </NavLink>
       </nav>
     </aside>
   );

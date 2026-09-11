@@ -1,6 +1,6 @@
 # QEQC Course Website
 
-A minimal course archive website for Quantum Entanglement and Quantum Computing material, built with React and Vite.
+A minimal course archive website for Quantum Entanglement & Quantum Computing material, built with React and Vite.
 
 ## Included sections
 
